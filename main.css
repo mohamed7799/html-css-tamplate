@@ -26,7 +26,7 @@ body {
 
 @media screen and (max-width: 800px) {
   #header {
-    padding: 4rem;
+    padding: .5rem;
   }
 }
 
@@ -34,6 +34,12 @@ body {
   font-size: 350%;
   padding-bottom: 2rem;
   line-height: 5rem;
+}
+
+@media screen and (max-width: 800px) {
+  #header__title {
+    font-size: 200%;
+  }
 }
 
 #header__par {
@@ -277,27 +283,6 @@ a {
   padding-left: 2rem;
 }
 
-#header {
-  background-image: url(./img/showcase.jpg);
-  background-position: left;
-  text-align: center;
-  color: white;
-  font-weight: 100;
-  padding: 7rem;
-}
-
-@media screen and (max-width: 800px) {
-  #header {
-    padding: 4rem;
-  }
-}
-
-#header__title {
-  font-size: 350%;
-  padding-bottom: 2rem;
-  line-height: 5rem;
-}
-
 #sub {
   background-color: #35424A;
   display: -webkit-box;
@@ -316,6 +301,7 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding: 1rem;
   }
 }
 

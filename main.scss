@@ -58,28 +58,6 @@ a {
 
 //navbar
 
-//header
-#header {
-    background-image: url(./img/showcase.jpg);
-    background-position: left;
-    text-align: center;
-    color: white;
-    font-weight: 100;
-    padding: 7rem;
-
-    @include mobile {
-        padding: 4rem;
-    }
-}
-
-#header__title {
-    font-size: 350%;
-    padding-bottom: 2rem;
-    line-height: 5rem;
-}
-
-//header
-
 //sub section
 #sub {
     @include section;
@@ -87,6 +65,7 @@ a {
 
     @include mobile {
         flex-direction: column;
+        padding: 1rem;
     }
 }
 

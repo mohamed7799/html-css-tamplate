@@ -8,7 +8,7 @@
     padding: 7rem;
 
     @include mobile {
-        padding: 4rem;
+        padding: .5rem;
     }
 }
 
@@ -16,6 +16,10 @@
     font-size: 350%;
     padding-bottom: 2rem;
     line-height: 5rem;
+
+    @include mobile {
+        font-size: 200%;
+    }
 }
 
 #header__par {

@@ -1,0 +1,146 @@
+@import './assets/resst';
+@import './assets/variables';
+@import './assets/mixins';
+@import './styles/home';
+@import './styles/about';
+@import './styles/services';
+
+body {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+// navbar
+#navbar {
+    @include section;
+    justify-content: flex-end;
+    align-items: center;
+
+    border-bottom: 3px solid $sec-color;
+
+
+
+    @include mobile {
+        flex-wrap: wrap;
+        padding: 1rem;
+        justify-content: center;
+    }
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#navbar__title {
+    margin-right: auto;
+    font-size: 180%;
+
+    span {
+        color: $sec-color;
+    }
+
+    @include mobile {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+}
+
+.navbar__item {
+    padding-left: 2rem;
+}
+
+//navbar
+
+//header
+#header {
+    background-image: url(./img/showcase.jpg);
+    background-position: left;
+    text-align: center;
+    color: white;
+    font-weight: 100;
+    padding: 7rem;
+
+    @include mobile {
+        padding: 4rem;
+    }
+}
+
+#header__title {
+    font-size: 350%;
+    padding-bottom: 2rem;
+    line-height: 5rem;
+}
+
+//header
+
+//sub section
+#sub {
+    @include section;
+    align-items: center;
+
+    @include mobile {
+        flex-direction: column;
+    }
+}
+
+#sub__par {
+    font-weight: bold;
+    font-size: 140%;
+    flex: 5;
+
+    @include mobile {
+        padding-bottom: 1rem;
+    }
+}
+
+#sub__input {
+    display: flex;
+    flex: 2;
+
+    input {
+        padding: .5rem;
+        flex: 3;
+    }
+
+    p {
+        @include btn;
+        margin-left: .5rem;
+
+        flex: 1;
+
+        @include mobile {
+            margin-left: 0;
+            margin-top: .5rem;
+            text-align: center;
+        }
+    }
+
+    @include mobile {
+        flex-direction: column;
+        width: 100%;
+    }
+
+}
+
+//sub section
+
+//footer
+
+footer {
+    background-color: $sec-color;
+    text-align: center;
+    padding: 2rem;
+    color: white;
+    margin-top: auto;
+}
+
+.clicked {
+    color: $sec-color;
+    font-weight: bold;
+}

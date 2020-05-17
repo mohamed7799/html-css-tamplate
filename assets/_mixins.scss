@@ -1,0 +1,19 @@
+@mixin section {
+    background-color: $primery-color;
+    display: flex;
+    color: white;
+    padding: 2rem 5rem;
+}
+
+@mixin btn {
+    padding: .5rem 1rem;
+    border: 1px solid #e8491d;
+    background-color: #e8491d;
+}
+
+
+@mixin mobile {
+    @media screen and (max-width:$mobile) {
+        @content;
+    }
+}

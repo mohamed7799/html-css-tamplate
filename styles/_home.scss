@@ -1,0 +1,61 @@
+//header
+#header {
+    background-image: url(./img/showcase.jpg);
+    background-position: left;
+    text-align: center;
+    color: white;
+    font-weight: 100;
+    padding: 7rem;
+
+    @include mobile {
+        padding: 4rem;
+    }
+}
+
+#header__title {
+    font-size: 350%;
+    padding-bottom: 2rem;
+    line-height: 5rem;
+}
+
+#header__par {
+    font-size: 115%;
+    padding-bottom: 2rem;
+}
+
+//header
+
+//cards section 
+
+#cards {
+    display: flex;
+    padding: 3rem 5rem;
+
+    @include mobile {
+        flex-direction: column;
+        padding: 3rem 2rem;
+    }
+}
+
+.card {
+    text-align: center;
+    padding: 0rem 1rem;
+
+    img {
+        width: 80px;
+    }
+
+    &>* {
+        padding-bottom: 1rem;
+    }
+
+    p {
+        line-height: 1.5rem;
+    }
+}
+
+.card__title {
+    font-weight: bold;
+}
+
+//cards section
